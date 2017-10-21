@@ -18,5 +18,5 @@ $("#counter").on('click', function() {
     localStorage.setItem('name' + counter, savedObject.name);
     localStorage.setItem('phone' + counter, savedObject.phone);
     localStorage.setItem('email' + counter, savedObject.email);
-    localStorage.setItem('info', savedObject.info);
+    localStorage.setItem('info' + counter, savedObject.info);
 });
