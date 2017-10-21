@@ -1,77 +1,72 @@
-
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
-        <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/theme-nearblack.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
-        <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,600,700" rel="stylesheet" type="text/css">
-        <link href="css/font-roboto.css" rel="stylesheet" type="text/css">
 
-    </head>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/theme-nearblack.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,600,700" rel="stylesheet" type="text/css">
+    <link href="css/font-roboto.css" rel="stylesheet" type="text/css">
 
-    <body>
+</head>
 
-        <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-var js, fjs = d.getElementsByTagName(s)[0];
-if (d.getElementById(id)) return;
-js = d.createElement(s); js.id = id;
-js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1861912163823717';
-fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<body>
+    <h1 id="target"></h1>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1861912163823717';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 
 
 
 
-				
-		<div class="main-space bg-primary">
 
-            <div class="fb-login-button" data-width="300px" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="true" data-auto-logout-link="true" data-use-continue-as="true"></div>
+    <div class="main-space bg-primary">
 
-		</div>
+        <div class="fb-login-button" data-width="300px" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="true" data-auto-logout-link="true" data-use-continue-as="true"></div>
 
-		
+    </div>
 
-		
-        <script>
-var finished_rendering = function() {
-console.log("finished rendering plugins");
-var spinner = document.getElementById("spinner");
-spinner.removeAttribute("style");
-spinner.removeChild(spinner.childNodes[0]);
-}
-FB.Event.subscribe('xfbml.render', finished_rendering);
-</script>
-<div id="spinner"
-    style="
+
+
+
+    <script>
+        var finished_rendering = function() {
+            console.log("finished rendering plugins");
+            var spinner = document.getElementById("spinner");
+            spinner.removeAttribute("style");
+            spinner.removeChild(spinner.childNodes[0]);
+        }
+        FB.Event.subscribe('xfbml.render', finished_rendering);
+    </script>
+    <div id="spinner" style="
         background: #4267b2;
         border-radius: 5px;
         color: white;
         height: 40px;
         text-align: center;
         width: 250px;">
-    Loading
-    <div
-    class="fb-login-button"
-    data-max-rows="1"
-    data-size="large"
-    data-button-type="continue_with"
-    ></div>
-</div>
-}
-               <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-        <script src="js/bootstrap.js"></script>
+        Loading
+        <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with"></div>
+    </div>
+    }
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/findCounter.js"></script>
 
-    </body>
+</body>
+
 </html>
-				
