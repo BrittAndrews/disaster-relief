@@ -1,12 +1,14 @@
 function setup() {}
 count = localStorage.getItem('number');
-var a = $("#infoTarget");
+//change code here for styles
 for (var i = 1; i <= count; i++) {
+    var a = $("<div>");
     a.append("<h3>" + 'Neighbor ' + i, "</h3>");
     a.append("<p>" + localStorage.getItem('name' + i) + "</p>");
     a.append("<p>" + localStorage.getItem('phone' + i) + "</p>");
     a.append("<p>" + localStorage.getItem('email' + i) + "</p>");
     a.append("<p>" + localStorage.getItem('info' + i) + "</p>");
+    $("#infoTarget").prepend(a);
 }
 
 function renderProgress(progress) {
