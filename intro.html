@@ -18,57 +18,28 @@
 
     <body>
 
-        <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-var js, fjs = d.getElementsByTagName(s)[0];
-if (d.getElementById(id)) return;
-js = d.createElement(s); js.id = id;
-js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1861912163823717';
-fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
-
-
 				
-		<div class="main-space bg-primary">
-            <button class="btn">Login with Facebook </button>  
-            <button class="btn">Login with Google + </button>
+	       <section class="bg-primary pt240 pb240 pt-xs-120 pb-xs-80 overlay image-bg">
+                <div class="background-image-holder">
+                    <img alt="image" class="background-image" src="img/logo_placeholder.png" />
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                            <img src="img/logo_placeholder.png" style="width: 150px;"/>
+                            <br><br><br>
+                            <h3 class="mb56 mb-xs-24">
+                                Find neighbors who aren't registered for emergency alerts. Get points for each neighbor. Have fun doing important work and save your neighborhood! 
+                            </h3>
+                            <a class="btn btn-lg btn-white mb0" href="#">+ Register your first neighbor</a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
 
-            
-            <div class="fb-login-button" data-width="300px" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="true" data-auto-logout-link="true" data-use-continue-as="true"></div>
-
-        <script>
-var finished_rendering = function() {
-console.log("finished rendering plugins");
-var spinner = document.getElementById("spinner");
-spinner.removeAttribute("style");
-spinner.removeChild(spinner.childNodes[0]);
-}
-FB.Event.subscribe('xfbml.render', finished_rendering);
-</script>
-<div id="spinner"
-    style="
-        background: #4267b2;
-        border-radius: 5px;
-        color: white;
-        height: 40px;
-        text-align: center;
-        width: 250px;">
-    Loading
-    <div
-    class="fb-login-button"
-    data-max-rows="1"
-    data-size="large"
-    data-button-type="continue_with"
-    ></div>
-</div>
-
-
-		</div>
-
-
-        <footer class="footer-2 bg-dark">
+		         <footer class="footer-2 bg-dark">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
@@ -107,9 +78,6 @@ FB.Event.subscribe('xfbml.render', finished_rendering);
                 </div>
                 <!--end of container-->
             </footer>
-
-		
-
 
         <script src="js/bootstrap.min.js"></script>
 
