@@ -2203,6 +2203,7 @@ button[type="submit"] .form-loading {
 }
 .accordion-2 .active .title:before {
   content: '\e61a';
+  
 }
 .accordion-2 .content p {
   padding: 16px 0;
