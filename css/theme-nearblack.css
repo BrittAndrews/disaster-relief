@@ -914,7 +914,7 @@ nav .btn,
   height: 55px;
 }
 .logo {
-  max-height: 60%;
+  max-height: 100%;
 }
 .logo-light {
   display: none;
