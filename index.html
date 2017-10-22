@@ -16,56 +16,105 @@
 
     </head>
 
-    <body>
-
-        <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-var js, fjs = d.getElementsByTagName(s)[0];
-if (d.getElementById(id)) return;
-js = d.createElement(s); js.id = id;
-js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1861912163823717';
-fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+    <body class="background">
 
 
+        <div class="nav-container">
+            <a id="top"></a>
+            <nav class="absolute transparent">
+                <div class="nav-bar">
+                    <div class="module left">
+                        <a href="index.html">
+                            <img class="logo logo-light" alt="block hero logo" src="img/logo.png" />
+                            <img class="logo logo-dark" alt="block hero logo" src="img/logo.png" /> 
+                            
+                        </a>
+                    </div>
+                    <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+                      
+                    </div>
+                    <div class="module-group right">
+                        <div class="module left">
+                            <ul class="menu">
+                            
+
+                                <li class="has-dropdown">
+                                    <a href="#">
+                                       FAQ
+                                    </a>
+   
+                                </li>
+
+                                 <li class="has-dropdown">
+                                    <a href="#">
+                                       Sign In
+                                    </a>
+   
+                                </li>
 
 
-				
-		<div class="main-space bg-primary">
+
+                               
+                               
+                                    </ul>
+                       
+                        </div>
+                        <!--end of menu module-->
+                    
+                        
+                        <div class="module widget-handle language left">
+                            <ul class="menu">
+                                <li class="has-dropdown">
+                                    <a href="#">ENG</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">French</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Espanol</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end of module group-->
+                </div>
+            </nav>
+        </div>
+
+
+  <section class="bg-primary pb240 pt-xs-120 pb-xs-80 overlay image-bg" style="padding-top: 140px;">
+                <div class="background-image-holder">
+                    <img alt="image" class="background-image" src="img/watchdog2.png" />
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                            <img src="img/watchdog2.png" style="width: 250px;"/>
+                            <br><br><br>
+                            <h3 class="mb56 mb-xs-24">
+                                Find neighbors who aren't registered for emergency alerts. Get points for each neighbor. Have fun doing important work and save your neighborhood! 
+                                <Br>
+                                <b>To get started choose a quick way to sign in below.</b>
+                            </h3>
+                                <div>
             <button class="btn">Login with Facebook </button>  
             <button class="btn">Login with Google + </button>
 
-            
-            <div class="fb-login-button" data-width="300px" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="true" data-auto-logout-link="true" data-use-continue-as="true"></div>
 
-        <script>
-var finished_rendering = function() {
-console.log("finished rendering plugins");
-var spinner = document.getElementById("spinner");
-spinner.removeAttribute("style");
-spinner.removeChild(spinner.childNodes[0]);
-}
-FB.Event.subscribe('xfbml.render', finished_rendering);
-</script>
-<div id="spinner"
-    style="
-        background: #4267b2;
-        border-radius: 5px;
-        color: white;
-        height: 40px;
-        text-align: center;
-        width: 250px;">
-    Loading
-    <div
-    class="fb-login-button"
-    data-max-rows="1"
-    data-size="large"
-    data-button-type="continue_with"
-    ></div>
-</div>
+        </div>
+                         
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
 
 
-		</div>
+				
+	
 
 
         <footer class="footer-2 bg-dark">
@@ -73,7 +122,7 @@ FB.Event.subscribe('xfbml.render', finished_rendering);
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
                             <a href="#">
-                                <img alt="Logo" class="image-xs mb32 fade-on-hover" src="img/logo_placeholder.png" />
+                                <img alt="Logo" class="image-xs mb32 fade-on-hover" src="img/logo.png" />
                             </a>
                             <h5 class="fade-1-4">Handcrafted by Liberty &copy; 2017
                                 <br /> Neighborhood Hero</h5>

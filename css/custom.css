@@ -47,16 +47,24 @@ input:focus::-webkit-input-placeholder {
 
 
 .cards {
-    width: 300px;
-    border-top: 5px solid white;
+    width: 350px;
+    border-top: 5px solid yellow;
     background-color: black;
     font-color: black;
     padding: 20px;
     margin-bottom: 20px;
 
+
 }
 
-.cards-flex {
+#infoTarget{
     display: flex;
     justify-content: space-between;
+     flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.card-title {
+    font-weight: 200;
+    font-color: #FCF73A;
 }
