@@ -44,3 +44,8 @@ input:focus::-webkit-input-placeholder {
 .individual-option {
     color: orange;
 }
+
+
+.cards {
+    background-color: #f1f1f1;
+}
