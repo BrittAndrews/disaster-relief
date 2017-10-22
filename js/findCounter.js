@@ -1,4 +1,3 @@
-function setup() {}
 count = localStorage.getItem('number');
 //change code here for styles
 for (var i = 1; i <= count; i++) {
