@@ -2,12 +2,14 @@ function setup() {}
 count = localStorage.getItem('number');
 //change code here for styles
 for (var i = 1; i <= count; i++) {
+    var a = $("<div class='cards-flex'>");
     var a = $("<div class='cards'>");
-    a.append("<h3>" + 'Neighbor ' + i, "</h3>");
+    a.append("<h3 class='card-title'>" + 'Neighbor ' + i, "</h3>");
     a.append("<p>" + localStorage.getItem('name' + i) + "</p>");
     a.append("<p>" + localStorage.getItem('phone' + i) + "</p>");
     a.append("<p>" + localStorage.getItem('email' + i) + "</p>");
     a.append("<p>" + localStorage.getItem('info' + i) + "</p>");
+    $("#infoTarget").prepend(a);
     $("#infoTarget").prepend(a);
 }
 

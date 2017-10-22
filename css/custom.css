@@ -47,5 +47,16 @@ input:focus::-webkit-input-placeholder {
 
 
 .cards {
-    background-color: #f1f1f1;
+    width: 300px;
+    border-top: 5px solid white;
+    background-color: black;
+    font-color: black;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+.cards-flex {
+    display: flex;
+    justify-content: space-between;
 }
