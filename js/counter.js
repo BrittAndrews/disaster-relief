@@ -5,6 +5,12 @@ if (localStorage.getItem('number') === null) {
     localStorage.setItem('number', localStorage.getItem('number'));
 }
 $("#counter").on('click', function() {
+    if ($("#phone").val() === '') {
+        return;
+    }
+    if ($('#phone').val().length < 10) {
+        return;
+    }
     var savedObject = {
         name: $("#name").val(),
         phone: $("#phone").val(),
